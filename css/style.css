@@ -136,7 +136,6 @@ main{
 .image_info{
     width: 16px;
     height: 16px;
-    /*object-fit: cover;*/
     display: inline-block;
 }
 
@@ -242,12 +241,11 @@ main{
 .image_output{
     width: 336px;
     height: 304px;
-    /*object-fit: cover;*/
     display: inline-block;
 }
 
 #output_message{
-    flex-basis: calc(100% - (67px + 32px)); /*CAMBIAR ESTO*/
+    flex-basis: calc(100% - (67px + 32px));
     font-family: sans-serif;
     font-size: 24px;
     line-height: 36px;
@@ -283,6 +281,35 @@ main{
 
 .invisible{
     display: none;
+}
+
+footer{
+    text-align: center;
+}
+
+.footer{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.link_footer{
+    display: flex;
+    width: 100%;
+}
+
+.image_oracle_footer{
+    width: 100px;
+    padding-bottom: 40px;
+}
+
+.image_alura_footer{
+    width: 50px;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-height: 600px) {
