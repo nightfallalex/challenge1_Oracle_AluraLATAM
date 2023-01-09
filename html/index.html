@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../media/img/logo.svg" type="image/x-icon">
+
+        <title>Encriptador Oracle+Alura programa ONE</title>
+
+        <script src="../js/scripts.js" defer></script>
+
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        
+    </head>
+    <body>
+        <script>
+            if (!navigator.clipboard) {alert("¡Tu navegador no soporta la API Asíncrona del Portapapeles!")};
+        </script>
+
+        <header>
+            <div class="container">
+                <div class="header">
+                    <img src="../media/img/logo.svg" alt="Logo de Alura" class="image_hdr">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="encrypter">
+                    <form class="encrypter_form">
+                        <div class="input_text">
+                            <textarea class="input_textarea" name="input_text_area" id="message" placeholder="Ingrese el texto aqui" required></textarea>
+                            <div class="input_text_info">
+                                <div class="info">
+                                    <img class="image_info" src="../media/img/exclamacion.svg" alt="simbolo circular de fondo gris oscuro con un signo de exclamacion cerrado de color blanco">
+                                    <p class="p_info" id="warning">Solo letras minúsculas y sin acentos</p>
+                                </div>
+                                <div class="input_text_buttons">
+                                    <input class="buttons" id="btn-encryp" type="button" value="Encriptar">
+                                    <input class="buttons" id="btn-decrypt" type="button" value="Desencriptar">
+                                </div> 
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="output_text_section">
+                        <div class="output_content">
+
+                            <div class="content" id="default">
+                                <div class="output_text_img">
+                                    <img class="image_output" src="../media/img/personita.svg" alt="dibujo de una persona con una lupa viendo un diamante arrodillado en el suelo">
+                                </div>
+                                <p>Ningún mensaje fue encontrado</p>
+                                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                            </div>
+
+                            <div class="content invisible" id="res">
+                                <textarea name="output_textarea" id="output_message" disabled></textarea>
+                                <button id="btn-copy">Copiar</button>
+                            </div>
+
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
